@@ -5,7 +5,7 @@
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## Live Preview
-[https://kdlamini.github.io/awesome-books-javascript/](https://kdlamini.github.io/awesome-books-javascript/)
+[https://see-why.github.io/LeaderBoard/dist/](https://see-why.github.io/LeaderBoard/dist/)
 
 ## Built With
 
