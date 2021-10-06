@@ -22,6 +22,16 @@ h1 {
   padding-left: 2%;
 }
 
+.fa-sync {
+  font-size: 1.2rem;
+  margin-right: 5px;
+  transition: transform 0.5s linear;
+}
+
+.rotate {
+  transform: rotate(720deg);
+}
+
 .navbar {
   justify-content: space-between;
   margin: 10px;
@@ -64,7 +74,7 @@ h1 {
 
 tbody,
 .score-header,
-.book-table,
+.score-table,
 .container,
 .table-entry,
 .d-flex {
@@ -90,11 +100,13 @@ tbody,
   height: 100%;
 }
 
-.book-table {
+.score-table {
   width: 94%;
   min-width: 280px;
   border: 1px solid #789;
   margin: 0% 0% 0% 3%;
+  height: 250px;
+  overflow-y: scroll;
 }
 
 tbody {
@@ -151,7 +163,7 @@ fieldset {
 }
 
 tbody,
-.book-table,
+.score-table,
 .container,
 .form {
   flex-direction: column;
