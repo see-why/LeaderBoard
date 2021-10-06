@@ -38,8 +38,7 @@ class LeaderBoard {
   addNewScore = () => {
     const nameInput = document.getElementById('player_name');
     const scoreInput = document.getElementById('player_score');
-    this.message = postScore(nameInput.value, scoreInput.value);
-    this.displayScores();
+    postScore(nameInput.value, scoreInput.value);
     nameInput.value = ' ';
     scoreInput.value = ' ';
   }
@@ -48,6 +47,7 @@ class LeaderBoard {
     const button = document.getElementById('addButton');
     button.addEventListener('click', async () => {
       this.addNewScore();
+      await this.displayScores();
     });
   }
 }
