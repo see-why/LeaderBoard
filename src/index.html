@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
     <script defer src="./script.js"></script>
     <title>LeaderBoard</title>
+    <link  rel="stylesheet"  href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"  crossorigin="anonymous"/>
 </head>
 <body>
     <div class="container">
@@ -19,16 +20,10 @@
             <section id="List-section" class="List-section d-flex"> 
                 <header class="score-header">
                     <h2>Recent Scores</h2>
-                    <input class="refreshButton" type="submit" value="Refresh" id="refreshButton">
+                    <button class="refreshButton" type="submit" value="Refresh" id="refreshButton"><i class="fal fa-sync"></i></button>
                 </header>           
-                <table id="bookList" class="book-table">
-                    <tr class="table-row"><td class="table-entry"><div>Name: 100</div></td></tr>
-                    <tr class="table-row"><td class="table-entry"><div>Name: 20</div></td></tr>
-                    <tr class="table-row"><td class="table-entry"><div>Name: 50</div></td></tr>
-                    <tr class="table-row"><td class="table-entry"><div>Name: 78</div></td></tr>
-                    <tr class="table-row"><td class="table-entry"><div>Name: 125</div></td></tr>
-                    <tr class="table-row"><td class="table-entry"><div>Name: 77</div></td></tr>
-                    <tr class="table-row"><td class="table-entry"><div>Name: 42</div></td></tr>
+                <table id="scoreTable" class="score-table">
+                   
                 </table>                
             </section>
     
@@ -37,9 +32,9 @@
                     <h2>Add your score</h2>
                 </header>
                 <fieldset>
-                    <form id="form" class="form d-flex">
-                        <input class="form-item margin-bottom" type="text" required placeholder="Your name" id="book_title">
-                        <input class="form-item margin-bottom" type="text" required placeholder="Your score" id="book_author">
+                    <form id="form" action="#" autocomplete="off" class="form d-flex">
+                        <input class="form-item margin-bottom" type="text" required placeholder="Your name" id="player_name">
+                        <input class="form-item margin-bottom" type="text" required placeholder="Your score" id="player_score">
     
                         <input class="form-item addButton" type="submit" value="Submit" id="addButton">
                     </form>
