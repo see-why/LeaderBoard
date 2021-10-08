@@ -12,13 +12,20 @@ class LeaderBoard {
       const table = document.getElementById('scoreTable');
       table.innerHTML = '';
 
-      this.boardArray.forEach((item) => {
+      this.boardArray.forEach((item, index) => {
         const tr = document.createElement('tr');
         tr.className = 'table-row';
         const td = document.createElement('td');
         td.className = 'table-entry';
         const div = document.createElement('div');
-        div.innerHTML = `${item.user}: ${item.score}`;
+        div.innerHTML = `${item.user}: ${item.score} &nbsp`;
+
+        if (index === 0) {
+          tr.style.background = '#00ff37';
+          const icon = document.createElement('i');
+          icon.className = 'fas fa-trophy-alt';
+          div.appendChild(icon);
+        }
 
         td.appendChild(div);
         tr.appendChild(td);

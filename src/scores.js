@@ -10,6 +10,15 @@ const getScores = async () => {
   return scores;
 };
 
+const displayMessage = (message) => {
+  const p = document.getElementById('info-message');
+  p.innerText = message;
+  p.style.color = '#20b2aa';
+  setTimeout(() => {
+    p.style.color = 'transparent';
+  }, 3000);
+};
+
 const postScore = async (player, score) => {
   if (player || score) {
     const boardItem = {
@@ -28,6 +37,7 @@ const postScore = async (player, score) => {
 
     const updateStatus = await message();
     const status = updateStatus.result;
+    displayMessage(status);
     return status;
   }
   return '';
