@@ -22,6 +22,10 @@ h1 {
   padding-left: 2%;
 }
 
+.info-message {
+  text-align: center;
+}
+
 .fa-sync {
   font-size: 1.2rem;
   margin-right: 5px;
@@ -109,6 +113,13 @@ tbody,
   overflow-y: scroll;
 }
 
+tbody,
+.score-table,
+.container,
+.form {
+  flex-direction: column;
+}
+
 tbody {
   width: 100%;
 }
@@ -119,7 +130,7 @@ tbody {
   justify-content: space-between;
 }
 
-.table-row:nth-child(even) {
+.table-row:nth-child(odd) {
   background: #add8e6;
 }
 
@@ -156,25 +167,31 @@ tbody {
   height: 35px;
 }
 
+.addButton {
+  align-self: flex-end;
+}
+
+.addButton,
+.refreshButton {
+  background-color: #20b2aa;
+  font-weight: bold;
+}
+
+.addButton:hover,
+.refreshButton:hover {
+  color: #fff;
+  background-color: #add8e6;
+  font-weight: bolder;
+}
+
 fieldset {
   border: none;
   width: 60%;
   padding: 0;
 }
 
-tbody,
-.score-table,
-.container,
-.form {
-  flex-direction: column;
-}
-
 .form-item {
   height: 40px;
-}
-
-.addButton {
-  align-self: flex-end;
 }
 
 .margin-bottom {
