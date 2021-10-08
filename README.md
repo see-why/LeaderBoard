@@ -26,14 +26,18 @@ Clone this repository or download the Zip folder:
 ```
 git@github.com:[see-why/LeaderBoard.git](https://github.com/see-why/LeaderBoard.git)
 ```  
+To Download all the dependencies run:
+```
+npm install
+```
+Tovstart app run:
+```
+npm run start
+```
 
 ## Test
 To track linter errors locally follow these steps:  
 
-Download all the dependencies run:
-```
-npm install
-```
 Track HTML linter errors run:
 ```
 npx hint .
